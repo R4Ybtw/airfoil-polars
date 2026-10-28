@@ -1,0 +1,17 @@
+# SolidWorks / Flow Simulation results (large, regenerable)
+*.fld
+*.cpt
+*.fpe
+*.ftr
+*.res
+*.bak
+~$*
+/[0-9]*/
+# MATLAB
+*.asv
+*.mat
+# XFOIL executable (download it yourself)
+data/xfoil/*.exe
+# OS
+Thumbs.db
+.DS_Store
