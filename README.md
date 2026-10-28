@@ -2,7 +2,7 @@
 
 **Question.** How accurately does SolidWorks Flow Simulation predict lift, drag and moment for the NACA 0012 (Re 6 million) and NACA 4412 (Re 1.52 million) validation cases? And how does it rank against an inviscid panel method, XFOIL and NASA's own CFD?
 
-**Status.** MATLAB tools written and verified against an exact solution (`tests/test_airfoil.m`, all passing). XFOIL and Flow Simulation runs not started.
+**Status.** MATLAB tools written and verified against an exact solution (`tests/test_airfoil.m`, all passing). XFOIL and Flow Simulation pending.
 
 ## Contents
 
@@ -30,7 +30,7 @@ run('src/run_panel_polars.m')
 run('src/compare_polars.m'); run('src/compare_cp.m')
 ```
 
-## Limitations (fill in as you learn them)
+## Limitations 
 
 - 2D, steady RANS: no unsteady stall or 3D effects. The experiments themselves are not 2D near stall.
 - Flow Simulation's wall functions and cut-cell mesh model the boundary layer rather than resolving it.
