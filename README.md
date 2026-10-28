@@ -39,6 +39,4 @@ run('src/compare_polars.m'); run('src/compare_cp.m')
 
 Reference data: NASA Turbulence Modeling Resource (turbmodels.larc.nasa.gov; GitHub tmbwg/turbmodels). XFOIL by Mark Drela (MIT). The panel method follows Kuethe & Chow.
 
-Code was first drafted with an AI assistant, then read, modified and run by me.
-
 Code: MIT licence. Text and figures: CC BY 4.0.
