@@ -97,9 +97,6 @@ XFOIL runs from `data/xfoil/` with `xfoil.exe < deck_naca0012_forced.txt` (and t
 - M. Drela, "XFOIL: An analysis and design system for low Reynolds number airfoils," in *Low Reynolds Number Aerodynamics*, Springer (1989).
 - A. M. Kuethe and C.-Y. Chow, *Foundations of Aerodynamics*, 5th ed., Wiley (1998).
 
-## Tools and AI use
-
-MATLAB, XFOIL and SolidWorks Flow Simulation. The code was first drafted with an AI assistant, then read, modified and run by me. The simulations and conclusions are my own.
 
 ## Licence
 
