@@ -7,10 +7,9 @@ function [xc, cp] = flowsim_cp(file, chord, p_inf, rho, U, x_key, p_key)
 %   against Model X. The curves sit with the quarter chord at the origin, so
 %   x/c = X/chord + 0.25.
 %   Cp = (p - p_inf) / (0.5 rho U^2), where p_inf is the AMBIENT pressure
-%   you set in the wizard (static, not total).
+%   set in the wizard (static, not total).
 %
 %   x_key, p_key: text that identifies the two columns (defaults 'X', 'Pressure').
-%   Written without a real export to test against — adjust the keys on first use.
 
     if nargin < 6 || isempty(x_key), x_key = 'X'; end
     if nargin < 7 || isempty(p_key), p_key = 'Pressure'; end

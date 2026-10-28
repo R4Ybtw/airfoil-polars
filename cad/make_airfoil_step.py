@@ -1,4 +1,13 @@
+"""Build the two airfoil test bodies as STEP files for SolidWorks Flow Simulation.
 
+    pip install cadquery
+    python make_airfoil_step.py          (run from the cad/ folder)
+
+Reads the <tag>_upper_mm.txt / <tag>_lower_mm.txt curves that src/make_inputs.m
+writes (quarter chord at the origin, millimetres), joins them into a closed
+section with a sharp trailing edge, and extrudes it 10 mm along +Z.
+The 10 mm depth matters only for the 2D force normalisation (span = area / perimeter).
+"""
 import cadquery as cq
 
 DEPTH = 10.0  # mm

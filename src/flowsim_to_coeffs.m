@@ -15,7 +15,7 @@ function C = flowsim_to_coeffs(alpha_deg, Fx, Fy, Mz, rho, U, chord, span)
 %   Mz   Torque (Z) about the origin, which write_airfoil_files puts at the
 %        quarter chord. The leading edge points to -x, so a nose-up moment is
 %        clockwise, i.e. negative Mz: Cm = -Mz / (q c^2 span).
-%   span depth the 2D solver integrated over (see docs/guide.md, "Find the span").
+%   span depth the 2D solver integrated over (Flow Simulation surface area / airfoil perimeter).
 
     a  = alpha_deg(:)*pi/180;
     Fx = Fx(:); Fy = Fy(:); Mz = Mz(:);

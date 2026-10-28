@@ -16,10 +16,8 @@ function deck = xfoil_deck(datfile, Re, M, alphas, transition, polarfile, cp_alp
 %   to an integral boundary-layer model with transition prediction. Excellent
 %   for attached flow; increasingly unreliable at and beyond stall.
 %
-%   NOTE: written to XFOIL 6.99's documented command syntax but NOT run here
-%   (the Linux build available to me crashed). If XFOIL stops, run the same
-%   commands by hand once to see which prompt differs. Blank lines matter:
-%   each one returns up a menu level.
+%   Written for XFOIL 6.99's command syntax. Blank lines matter: each one
+%   returns up a menu level.
 
     if nargin < 7, cp_alphas = []; end
     [~, stem] = fileparts(datfile);

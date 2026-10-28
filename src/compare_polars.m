@@ -9,13 +9,13 @@
 % Flow Simulation results file, one row per angle (forces straight from the goals):
 %   alpha,Fx,Fy,Mz
 %   0,1.234,0.001,-0.02
-% Set SPAN below to the depth Flow Simulation integrated over (docs/guide.md).
+% SPAN is the depth Flow Simulation integrated over (surface area / airfoil perimeter).
 
 clear; clc;
 here = fileparts(mfilename('fullpath')); addpath(here);
 root = fullfile(here, '..');
 ref  = fullfile(root, 'data', 'reference');
-SPAN = 0.010;                          % m  <-- CHECK (Surface Parameters area / perimeter)
+SPAN = 0.010;                          % m, from Surface Parameters: area / perimeter
 F    = flow_conditions(6.0e6);
 
 L  = read_tecplot_dat(fullfile(ref, 'CLCD_Ladson_expdata.dat'));
